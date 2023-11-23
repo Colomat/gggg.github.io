@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(75, 39, 105);
+}
+
+h1{
+    padding: 30px;
+    color: #fff;
+}
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+}
+
+.caja-texto{
+    background-color: rgb(212, 203, 203);
+    color: #000;
+    line-height: 24px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 3px 20px #000;
+    font-size: 19px;
+    text-wrap: balance;
+}
+
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 50px;
+    transition: all .5s;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 1px 5px 10px #ffffff;
+}
+
+a:hover{
+    background-color: rgb(154, 98, 201);
+}
+
+
+
+.fotos{
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.fotos .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotos .col{
+    margin: 20px;
+}
+
+.fotos .col img{
+    width: 200px;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.fotos .col img:hover{
+    transform: scale(2);
+}
+
+.pop{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+
+
+@media(max-width: 500px){
+    .fotos{
+        margin-top: 500px;
+    }
+
+    .pop{
+        margin-top: 2800px;
+    }
+}
